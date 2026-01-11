@@ -9,111 +9,158 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Main CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 <header class="top-header">
   <div class="header-left">
     <i class="fas fa-bars menu-icon"></i>
     <span class="logo">KB PRASAC Bank</span>
   </div>
 
-  <nav class="nav">
-    <div class="nav-item active" id="personalBtn">
-      Personal <i class="fas fa-chevron-up"></i>
+   <nav class="nav">
+      <div class="nav-item" id="personalBtn">
+        Personal <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="nav-item">
+        Business <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="nav-item">
+        Digital <i class="fas fa-chevron-down"></i>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <i class="fas fa-search"></i>
+      <button class="corp-btn">KB PRASAC Corporate</button>
     </div>
-    <div class="nav-item">
-      Business <i class="fas fa-chevron-down"></i>
+  </header>
+
+  <section class="mega-menu" id="personalMenu">
+    <div class="mega-container">
+      <div class="mega-col">
+        <h4>Loans</h4>
+        <a href="#">Micro Business Loan</a>
+        <a href="#">Small Business Loan</a>
+        <a href="#">Medium Business Loan</a>
+        <a href="#">Overdraft Loan</a>
+      </div>
+
+      <div class="mega-col">
+        <h4>Deposits</h4>
+        <a href="#">Current Account</a>
+        <a href="#">Premium Current Account</a>
+        <a href="#">Digital Account</a>
+        <a href="#">Savings Account</a>
+      </div>
+
+      <div class="mega-col">
+        <h4>Self-Banking</h4>
+        <a href="#">KB PRASAC Mobile</a>
+        <a href="#">Cards</a>
+        <a href="#">Digital Account</a>
+      </div>
+
+      <div class="mega-col">
+        <h4>Services</h4>
+        <a href="#">Bill Payments</a>
+        <a href="#">Life Insurance Service of AIA</a>
+        <a href="#">Forte Insurance</a>
+      </div>
     </div>
-    <div class="nav-item">
-      Digital <i class="fas fa-chevron-down"></i>
-    </div>
-  </nav>
+  </section>
 
-  <div class="header-right">
-    <i class="fas fa-search"></i>
-    <span>ភាសា</span>
-    <button class="corp-btn">
-      <i class="fas fa-globe"></i> KB PRASAC Corporate
-    </button>
-  </div>
-</header>
+  <main>
+     </main>
 
-<!-- ================= MEGA MENU ================= -->
-<section class="mega-menu" id="personalMenu">
-  <div class="mega-col">
-    <h4>Loans</h4>
-    <a href="#"><i class="fas fa-user"></i> Personal Loan</a>
-    <a href="#"><i class="fas fa-home"></i> Housing Loan</a>
-    <a href="#"><i class="fas fa-car"></i> Car Loan</a>
-  </div>
-
-  <div class="mega-col">
-    <h4>Deposits</h4>
-    <a href="#"><i class="fas fa-piggy-bank"></i> Savings Account</a>
-    <a href="#"><i class="fas fa-wallet"></i> Current Account</a>
-    <a href="#"><i class="fas fa-coins"></i> Fixed Deposit</a>
-  </div>
-
-  <div class="mega-col">
-    <h4>Self-Banking</h4>
-    <a href="#"><i class="fas fa-credit-card"></i> ATM</a>
-    <a href="#"><i class="fas fa-mobile"></i> Mobile Banking</a>
-    <a href="#"><i class="fas fa-desktop"></i> Internet Banking</a>
-  </div>
-
-  <div class="mega-col">
-    <h4>Services</h4>
-    <a href="#"><i class="fas fa-exchange-alt"></i> Money Transfer</a>
-    <a href="#"><i class="fas fa-file-invoice"></i> Bill Payment</a>
-    <a href="#"><i class="fas fa-id-card"></i> Cards</a>
-  </div>
+  <script src="script.js"></script>
 </section>
 
-<!-- ================= HERO IMAGE ================= -->
+<!-- HERO -->
 <section class="hero-banner">
-  <img src="./img/img.jpg" alt="Hero Banner">
+  <img src="./img/img.png" alt="Hero Banner">
 </section>
 
-<!-- ================= FINANCIAL SOLUTIONS ================= -->
 <section class="solutions">
-  <h2 class="section-title">Financial Solutions for Your Growth</h2>
+  <h2>Financial Solutions for Your Growth</h2>
 
   <div class="solutions-grid">
-
-    <div class="digital-card">
-      <h3>Digital Account</h3>
-      <p>Open an account instantly via KB PRASAC Mobile.</p>
-      <div class="phone"></div>
+    <!-- DIGITAL ACCOUNT -->
+    <div class="solution-card digital">
+      <div class="text">
+        <h3>Digital Account</h3>
+        <p>Open an account instantly via KB PRASAC Mobile.</p>
+      </div>
+      <img src="./img/Digital-AccountHome-Page-Thumbnail.png" alt="Mobile App" class="phone-img">
     </div>
 
-    <div class="side-cards">
-      <div class="card">
-        <h3>Term Deposit Account</h3>
-        <p>Let your fund grow with high return and safety.</p>
-        <div class="plant"></div>
+    <!-- RIGHT SIDE -->
+    <div class="right-cards">
+      <div class="solution-card gray">
+        <div>
+          <h3>Term Deposit Account</h3>
+          <p>Let your fund grow with high return and safety.</p>
+        </div>
+        <img src="./img/Savings-Plan-Account-Home-Page-Thumbnail.png" alt="Plant">
       </div>
 
-      <div class="card">
-        <h3>Savings Plan Account</h3>
-        <p>Save every month to reach your financial goal.</p>
-        <div class="piggy"></div>
+      <div class="solution-card gray">
+        <div>
+          <h3>Savings Plan Account</h3>
+          <p>Save every month to reach your financial goal.</p>
+        </div>
+        <img src="./img/TD-Account-Home-Page-Thumbnail.png" alt="Piggy Bank">
       </div>
     </div>
-
   </div>
 </section>
-<!-- ================= HERO IMAGE ================= -->
- <section>
-  <div class="exchange">
-    <video width="50%" controls>
-    <source src="./vd/git-demo.mp4" type="video/mp4">
-    </video>
+<section class="promo-section">
+  <!-- VIDEO BANNER -->
+  <div class="promo-banner">
+    <img src="./img/banner.jpg" alt="Promo Banner">
+    <div class="promo-overlay">
+      <button class="play-btn">▶</button>
+      <h3>ជីវិតរឹងមាំដោយសេវាធនាគាររបស់យើង</h3>
+      <a href="#" class="learn-btn">Learn More →</a>
+    </div>
   </div>
- </section>
-<script src="script.js"></script>
-</body>
-</html>
+
+  <!-- EXCHANGE RATE -->
+  <div class="exchange-box">
+    <h3>Exchange Rate</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Buy</th>
+          <th>Sell</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USD-KHR</td>
+          <td>4,017 <span class="down">↓</span></td>
+          <td>4,035 <span class="down">↓</span></td>
+        </tr>
+        <tr>
+          <td>THB-KHR</td>
+          <td>124.75 <span class="down">↓</span></td>
+          <td>128.50 <span class="down">↓</span></td>
+        </tr>
+        <tr>
+          <td>USD-THB</td>
+          <td>31.4000 <span class="down">↓</span></td>
+          <td>32.2000 <span class="up">↑</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="update">Upload Date : January 9, 2026 at 4:20 PM</p>
+    <a href="#" class="see-more">See More →</a>
+  </div>
+</section>
+
